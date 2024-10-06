@@ -1,0 +1,142 @@
+/* Introduction.css */
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf3fd; /* Background color of the container */
+    color: #0e0d0d; /* Text color */
+    padding: 50px;
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1s forwards; /* Animation for the container */
+}
+
+.intro-left, .intro-right {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1s forwards; /* Animation for child elements */
+}
+
+.intro-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation-delay: 0.3s; /* Delay for the left section */
+}
+
+.intro-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 0.6s; /* Delay for the right section */
+}
+
+.intro-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cadre-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Space between the cadres */
+    margin-bottom: 20px;
+}
+
+.cadre {
+    width: 300px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 54px; /* Adjust font size as needed */
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cadre1 {
+    margin: 50px;
+    background-color: #41c3d8; /* Background color of Cadre 1 */
+    color: #cdf5e5; /* Text color of Cadre 1 */
+    transform: rotate(-5deg); /* Rotate the cadre */
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+.cadre2 {
+    background-color: #f9e172; /* Background color of Cadre 2 */
+    color: #f04e4e; /* Text color of Cadre 2 */
+    margin: 50px 50px 0px -20px;
+    transform: rotate(5deg); /* Rotate the cadre */
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+.intro-description {
+    font-size: 18px;
+    margin: 30px 0 20px 0; /* Adjust top margin to move text down */
+}
+
+.start-button {
+    background-color: #c6abab; /* Background color of the button */
+    color: #4d3f69; /* Text color of the button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-button:hover {
+    background-color: #9d9beb; /* Background color on hover */
+    color: #4d3f69; /* Text color on hover */
+}
+
+.imag {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .intro-left, .intro-right {
+      flex: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .cadre-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cadre {
+      width: 80%;
+      height: auto;
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  
+    .title-main {
+      font-size: 40px; /* Adjust title size for smaller screens */
+    }
+}

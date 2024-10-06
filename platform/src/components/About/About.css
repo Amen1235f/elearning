@@ -1,0 +1,160 @@
+/* About.css */
+
+.about-container {
+    padding: 40px;
+    background-color: #faf3fd; /* Light pink background for a soft, friendly feel */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, kid-friendly font */
+    position: relative;
+    overflow: hidden; /* Ensure bubbles and other elements don't overflow */
+}
+
+.title1 {
+    text-align: left;
+    margin-bottom: 30px;
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1s forwards; /* Animation for title */
+    animation-delay: 0.3s; /* Delay for title */
+}
+
+.title1 h1 {
+    font-size: 3em; /* Larger text for better visibility */
+    color: #ff4081; /* Bright pink color */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Stronger shadow for more impact */
+    border-bottom: 3px dashed #ff4081; /* Dotted underline for playful touch */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.modules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1s forwards; /* Animation for modules */
+    animation-delay: 0.6s; /* Delay for modules */
+}
+
+.module-card {
+    background-color: ghostwhite; /* White background for contrast */
+    border-radius: 20px; /* More rounded corners for a friendly look */
+    padding: 40px 20px 20px 20px; /* Extra space at the top for image */
+    width: 280px; /* Slightly wider cards for more content */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bigger shadow for a floating effect */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.module-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.module-card h3 {
+    font-size: 1.8em; /* Larger font size for headings */
+    color: #ff4081; /* Bright pink color */
+    margin-bottom: 10px;
+}
+
+.module-card p {
+    font-size: 1.1em; /* Slightly larger text for readability */
+    color: #555; /* Softer text color */
+    margin-bottom: 20px;
+}
+
+.module-card button {
+    background-color: #ff4081; /* Bright pink color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 20px; /* Rounded button corners */
+    padding: 12px 24px; /* Larger padding for easier clicking */
+    cursor: pointer;
+    font-size: 1.2em; /* Larger font size for readability */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
+}
+
+.module-card button:hover {
+    background-color: #f50057; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Decorative bubbles for card images */
+.bubble {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: transparent; /* Transparent background for images */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow for bubble */
+    overflow: hidden; /* Ensure images stay within bubble */
+}
+
+/* Left corner bubbles */
+.bubble-left {
+    top: 10px;
+    left: 10px;
+    background: url('../../assests/images/rocket_15381149.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Right corner bubbles */
+.bubble-right {
+    top: 10px;
+    right: 10px;
+    background: url('../../assests/images/crib-mobile_2303974.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Additional bubbles */
+.bubble-couple {
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../../assests/images/couple_7173088.png') no-repeat center center;
+    background-size: contain;
+}
+
+.bubble-baby {
+    bottom: 10px;
+    right: 10px;
+    background: url('../../assests/images/baby_10776976.png') no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+
+    .title1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .modules {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .module-card {
+      width: 90%;
+      font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}

@@ -1,0 +1,143 @@
+.beginner-html-course {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f8ff; /* Alice Blue for a soft background */
+  }
+  
+  .sidebar-nav {
+    width: 300px;
+    background-color: #ffebcd; /* Blanched Almond for a warm look */
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-nav:hover {
+    background-color: #ffe4b5; /* Moccasin for a light hover effect */
+  }
+  
+  .html-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .course-title {
+    font-size: 2.5rem;
+    color: #ff4500; /* OrangeRed for vibrant title */
+    margin-bottom: 20px;
+  }
+  
+  .lesson-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lesson-button {
+    background: #f5deb3; /* Wheat background for buttons */
+    border: 2px solid #ff4500; /* OrangeRed border for buttons */
+    font-size: 1.2rem;
+    color: #ff4500;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .lesson-button:hover {
+    background-color: #ff4500; /* OrangeRed background on hover */
+    color: #ffffff; /* White text on hover */
+  }
+  
+  .lesson-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .lesson-title {
+    font-size: 2.5rem;
+    color: #ff6347; /* Tomato for a bright title */
+    margin-bottom: 10px;
+  }
+  
+  .lesson-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .visual-example {
+    background: #f0fff0; /* Honeydew background for examples */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #90ee90; /* LightGreen border for visual examples */
+  }
+  
+  .code-example {
+    background: #f5f5f5; /* Light gray for code background */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc; /* Light gray border for code background */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .code-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    background-color: #f5f5f5;
+  }
+  
+  .code-result h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ff6347; /* Tomato for Result title */
+  }
+  .game-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    animation: button-glow 1.5s infinite;
+  }
+  
+  .game-button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  @keyframes button-glow {
+    0% {
+      box-shadow: 0 0 10px #28a745;
+    }
+    50% {
+      box-shadow: 0 0 20px #28a745;
+    }
+    100% {
+      box-shadow: 0 0 10px #28a745;
+    }
+  }

@@ -1,0 +1,147 @@
+.lesson-nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #f0f8ff; /* Light blue background for a joyful feel */
+    color: #333;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .topic-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #80deea; /* Soft teal border */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .topic-section:hover {
+    background-color: #e0f7fa; /* Light turquoise background on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .topic-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #80deea 0%, #b2dfdb 100%); /* Gradient background */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .topic-title {
+    font-size: 28px;
+    color: #00796b; /* Elegant teal color */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  }
+  
+  .topic-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .topic-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .levels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .level-card {
+    background-color: #e0f2f1; /* Light teal background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .level-title {
+    font-size: 24px;
+    color: #00796b; /* Elegant teal color for titles */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .progress-circle-container {
+    margin: 10px 0;
+  }
+  
+  .progress-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .progress-circle:hover {
+    transform: scale(1.1);
+  }
+  
+  .progress-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .level-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+  
+  .level-description:hover {
+    color: #00796b; /* Change color on hover for better interactivity */
+  }
+  
+  @media (max-width: 768px) {
+    .lesson-nav-container {
+      padding: 20px;
+    }
+  
+    .topic-title {
+      font-size: 24px;
+    }
+  
+    .topic-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .progress-circle {
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+    }
+  
+    .level-description {
+      font-size: 12px;
+    }
+  }
+  

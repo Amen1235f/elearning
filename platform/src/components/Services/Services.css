@@ -1,0 +1,192 @@
+/* Services.css */
+
+.services-container {
+    padding: 50px 20px;
+    background-color: #e0f7fa; /* Light teal background */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* For animation overflow */
+}
+
+.services-title {
+    font-size: 2.8em;
+    color: #00796b; /* Teal color for the title */
+    margin-bottom: 30px;
+    font-family:fontawesome;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.services-left,
+.services-right {
+    width: 30%;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #004d40; /* Darker teal color */
+    animation: bounceIn 1.2s ease-in-out;
+    background-color: #b2dfdb; /* Light teal background for sections */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: fantasy;
+}
+
+.services-left {
+    text-align: left;
+    transform: rotate(-1deg);
+}
+
+.services-right {
+    text-align: left;
+    transform: rotate(1deg);
+}
+
+.services-right ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.services-right li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.services-right li:hover {
+    transform: translateX(10px);
+}
+
+.services-right i {
+    margin-right: 10px;
+    color: #ff5722; /* Bright color for icons */
+}
+
+.center-line {
+    width: 3px;  /* Line thickness */
+    height: 300px;  /* Line height */
+    background-color: #00796b;  /* Line color */
+    margin: 0 auto;  /* Center line horizontally */
+    position: absolute;
+    left: 50%;  /* Center the line in the middle */
+    transform: translateX(-50%);
+    animation: growLine 1s ease-in-out;
+}
+
+@keyframes growLine {
+    from {
+        height: 0;
+    }
+    to {
+        height: 300px;
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.service-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    animation: float 2s infinite;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 3em;
+    color: #ff5722; /* Bright color for icons */
+    margin-bottom: 15px;
+    animation: rotateIcon 1.5s linear infinite;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00796b; /* Teal color for titles */
+    font-family: 'Comic Sans MS', sans-serif; /* Fun font */
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #004d40; /* Darker teal color */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

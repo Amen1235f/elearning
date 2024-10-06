@@ -1,0 +1,109 @@
+.contact-container {
+    padding: 40px;
+    background-color: #e8f5e9; /* Soft green background */
+    border-radius: 20px;
+    border: 5px solid #81c784; /* Light green border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-header-line {
+    height: 6px;
+    background-color: #81c784; /* Light green line */
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-title {
+    color: #388e3c; /* Dark green for title */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid #c5e1a5; /* Light green border for each section */
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .contact-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #c8e6c9; /* Lighter green background for columns */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+  }
+  
+  .contact-column-title {
+    color: #4caf50; /* Bright green for titles */
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-column-text {
+    margin: 10px 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .highlighted-text {
+    color: #ff7043; /* Bright coral for highlights */
+    font-weight: bold;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #388e3c; /* Dark green color for icons */
+    font-size: 24px;
+  }
+  
+  .contact-footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .contact-footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .social-button {
+    background-color: #4caf50; /* Bright green for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  

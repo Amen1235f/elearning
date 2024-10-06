@@ -1,0 +1,87 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    background-color: #f1f8fa;
+    padding: 10px 30px; /* Adjusted padding for a better balance */
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.logo img {
+    height: 50px; /* Slightly larger logo */
+    margin-right: 10px; /* Space between the logo and title */
+}
+
+/* General styles for the 'et' class */
+.et {
+    display: inline-block; /* Ensure letters stay inline */
+    font-weight: bold; /* Make letters bold */
+    font-size: 30px; /* Larger font size */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fun, playful font */
+    letter-spacing: 2px; /* Space out letters slightly */
+    text-transform: uppercase; /* Make all letters uppercase */
+}
+
+/* Styles for the individual letters */
+.letter {
+    display: inline-block; /* Ensures each letter is a block for individual styling */
+    transform: rotate(5deg); /* Add a slight rotation for playful effect */
+    margin: 0 3px; /* Add some margin between letters */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.letter:hover {
+    transform: rotate(10deg) scale(1.2); /* Rotate and scale up on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+.liste {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Reduced gap between items */
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px; /* Reduced margin between list items */
+    padding: 19px 50px; /* Increased padding for larger item area */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.list-item img {
+    height: 24px; /* Increased icon size for better visibility */
+    margin-right: 10px; /* Slightly increased margin for spacing */
+}
+
+.list-item span {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #333;
+    font-weight: 500; /* Slightly bolder text for better visibility */
+}
+
+.list-item:hover {
+    background-color: #e2e6ea; /* Light background on hover */
+    transform: scale(1.05);
+}
+
+.list-item:hover img {
+    filter: brightness(0) invert(1); /* Inverted color on hover */
+}
+
+.list-item:hover span {
+    color: #ff4d4d; /* Red color on hover */
+}

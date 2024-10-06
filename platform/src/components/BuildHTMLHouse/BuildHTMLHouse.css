@@ -1,0 +1,190 @@
+/* General Styles */
+.build-html-house-game {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+  }
+  
+  .game-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .code-editor, .live-preview {
+    width: 45%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 300px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #00a8e8;
+    background-color: #e0f7fa;
+  }
+  
+  .preview-content {
+    border: 2px solid #00a8e8;
+    padding: 20px;
+    min-height: 300px;
+    background-color: #ffffff;
+  }
+  
+  h3 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+    animation: bounce 1s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hint Section */
+  .hint {
+    margin-top: 20px;
+    background-color: #fff3cd;
+    border: 2px solid #ffeeba;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .hint h3 {
+    color: #856404;
+  }
+  
+  .hint ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hint li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  
+  .hint code {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Warning Card */
+  .warning-card {
+    background-color: #ffebcd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .warning-card h2 {
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .warning-card p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .warning-card button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    animation: button-glow 1s infinite;
+  }
+  
+  @keyframes button-glow {
+    0% {
+      box-shadow: 0 0 10px #28a745;
+    }
+    50% {
+      box-shadow: 0 0 20px #28a745;
+    }
+    100% {
+      box-shadow: 0 0 10px #28a745;
+    }
+  }
+  
+  .warning-card button:hover {
+    background-color: #218838;
+  }
+  /* Styles for the house */
+.house {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 5px solid #6A4F4B;
+    background-color: #E9E2D0;
+    width: 300px;
+  }
+  
+  /* Styling the windows */
+  .windows {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .window {
+    width: 60px;
+    height: 60px;
+    background-color: #87CEEB; /* Light blue for windows */
+    border: 2px solid #1E90FF; /* Darker blue for the frame */
+    margin: 5px;
+    border-radius: 10%;
+  }
+  
+  /* Styling the door */
+  .door {
+    width: 80px;
+    height: 120px;
+    background-color: #8B4513; /* Brown color for the door */
+    border: 3px solid #5A2D0C; /* Darker brown for the frame */
+    margin-top: 10px;
+    border-radius: 5%;
+  }
+  
